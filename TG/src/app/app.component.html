@@ -1,0 +1,11 @@
+<mat-card class="appCard">
+        <canvas class="terrain" id="terrainDisplay" width="50" height="50"> </canvas>
+        <div style="display: flex; flex-grow: grow">
+                <app-slider-card question="Water" (result)="gotResult($event, 1)"></app-slider-card>
+                <app-slider-card question="Sand" (result)="gotResult($event, 2)"></app-slider-card>
+        </div>
+        <div style="display: flex; flex-grow: grow">
+                <app-slider-card question="Grass" (result)="gotResult($event, 3)"></app-slider-card>
+                <app-slider-card question="Stone" (result)="gotResult($event, 4)"></app-slider-card>
+        </div>
+</mat-card>

@@ -1,0 +1,28 @@
+.mat-card-title {
+    font-size: 2.5vmin; // dymanically adjusts with viewport dimension changes
+    padding-top: 1vw;
+    margin-left: 10%;
+
+}
+
+mat-card {
+    border: transparent; // border color
+    color: rgb(0, 0, 0); // text color
+    background-color: transparent;
+    width: 100%;
+    margin-left:1%;
+    transition: none !important;
+    box-shadow: none !important;
+}
+
+mat-slider {
+    width: 100%;
+    margin-left: 5%;
+}
+
+
+mat-card-subtitle {
+    color: rgb(200, 200, 200);
+    font-size:2vmin; // dymanically adjusts with viewport dimension changes
+}
+

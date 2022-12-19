@@ -1,0 +1,8 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <div style="display: flex; flex-grow: grow">
+    <mat-slider thumbLabel step="{{units}}" value="0" (change)="inputChanged($event)"></mat-slider><mat-card-title>{{question}}</mat-card-title>
+    </div>
+</mat-card>

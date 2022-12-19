@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+// card enveloping the entirety of the app
+.appCard {
+    width: 34vw;
+    margin-left: 32vw;
+    background-color: white;
+}
+
+// canvas that renders the terrain
+.terrain {
+    height: 32vw;
+    width: 100%;
+    background-color: blue;
+    image-rendering: optimizeSpeed;             /* Older versions of FF          */
+    image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+    image-rendering: -webkit-optimize-contrast; /* Safari                        */
+    image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+    image-rendering: pixelated;                 /* Awesome future-browsers       */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+}
+
+// all classes/attributes below are to customize the mat slider
+.mat-slider.mat-slider-horizontal .mat-slider-track-background,
+.mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+  height: 100%;
+  background-color: black;
+}
+
+  .mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+    background-color: rgb(0, 0, 0);
+  }
+  .mat-accent .mat-slider-thumb {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: solid 2px rgb(0, 0, 0);
+    bottom: -12.5px;
+    right: -12.5px;
+  }
+
+  .mat-slider-track-background .mat-slider-track-fill {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .mat-slider-min-value:is(.mat-slider-thumb-label-showing) .mat-slider-thumb {
+    background-color: rgb(0, 0, 0);
+  }
+  
